@@ -2,33 +2,21 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
 <title>iTweakOS</title>
-<meta name="propeller" content="3099bfa614f0bb56e8fa425d8a8ed14b">
-<div id="smt-130397667" style="padding: 0px"></div>
-    <script async="async" type="text/javascript" src="//go.mobisla.com/notice.php?p=1630875&interactive=1&pushup=1"></script>
-<script src="//go.mobtrks.com/notice.php?p=1684006&interstitial=1"></script>
 <head>
 <style>
 
 body{
   margin:0px;
+  margin-top:20px;
   background-color: #f2f2f2;
 }
-.nav {
- opacity: 0.9;
-}
+
 a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.page {
- -webkit-animation: fadein 1s; 
-}
 
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 a {
-  color: orange;
+  color: black;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -44,98 +32,145 @@ ul{
   bottom: 0;
   width:100%;
   margin:0px;
-  background-color:#ffffff;
+  background-color:#f2f2f2;
   padding:10px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top:solid;
+  border-top-width:thin;
+  border-top-color: grey;
 }
 li{
-  display:inline-block;
-  margin-right:6%;
-  margin-left:6%;
+  float: left;
+    text-align: center;
+    width: 22.5%;
+    transition: all 0.3s ease;
+}
+
+
+
+@font-face { font-family: sfd; src: url('font/SanFranciscoDisplay-light.otf'); }
+@font-face { font-family: sfdb; font-weight: bold; src: url('font/SanFranciscoDisplay-Bold.otf');}
+span, .boun{
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.boun {animation-delay: 2s;}
+span:nth-child(2){animation-delay: 2.75s;}
+span:nth-child(3){animation-delay: 3s;}
+span:nth-child(4){animation-delay: 3.15s;}
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
 }
 
 </style>
 </head>
 <body>
-<div class="wrapper"></div>
-
 
   <div class="nav">
   <ul>
-  <li><a href="index.html"><img src="img/house.png"></img></a></li>
-  <li><a href="itweakos.html"><img src="img/buffer.png"></img></a></li>
-  <li><a href="premium.html"><img src="img/premium.png"></img></a></li>
-  <li><a href="paid.html"><img src="img/rocket.png"></img></a></li>
-  <li><a href="settings.html"><img src="img/dots.png"></img></a></li>
+  <li><a href="index.html"><img src="img/today.png"></img></a></li>
+  <li><a href="games.html"><img src="img/launch.png"></img></a></li>
+  <li><a href="apps.html"><img src="img/layer.png"></img></a></li>
+  <li><a href="info.html"><img src="img/share.png"></img></a></li>
   </ul>
   </div>
 
-  <center><h1 style="margin:0px;font-family:arial;font-size:25px;border-bottom:solid;border-bottom-width:thin;border-bottom-color:white;background-color:white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding:10px;">iTweakOS Apps</h1></center>
-<div class="page">
-  <img style="width:100%;" src="http://caspia.000webhostapp.com/img/2pwJPblWTWueIOChpSGO_joker2.png"></img>
 
-  <br>
-  <center>
-  <a style="text-decoration:none;" href="http://itunes.apple.com/us/app/titan-browser-cloud-file-vpn/id1256264596?mt=8" >
-  <div style="width:88%;padding-bottom:22px;padding-top:1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom:30px;background-color: white;border-radius:20px;"  id="item">
-      <h1 style="margin-left:15%;margin-top:20px;font-family:arial;font-size:15px;color:#444444;text-decoration:none;" href="" >
-        <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:70px;margin-right:10px; width:70px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/5759E63D-5F81-4EE7-8A66-9497E6383433.jpg?w=200&q=40&dpr=1">Titan</h1>
-        <p style="margin-left:25%;margin-top:20px;font-family:arial;font-size:12px;color:#444444;text-decoration:none;">Hidden Apps</p>
-    </div>
-  </a>
-  </center>
-  <center>
-  <a style="text-decoration:none;" href="http://itunes.apple.com/us/app/magic-phone-cleaner/id1176756975?mt=8" >
-  <div style="width:88%;padding-bottom:22px;padding-top:1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom:30px;background-color: white;border-radius:20px;"  id="item">
-      <h1 style="margin-left:15%;margin-top:20px;font-family:arial;font-size:15px;color:#444444;text-decoration:none;" href="" >
-        <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:70px;margin-right:10px; width:70px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/55E3714D-FBF8-42C5-9A12-BBD6B08E2B33.jpg?w=200&q=40&dpr=1">Magic Phone Cleaner</h1>
-        <p style="margin-left:25%;margin-top:20px;font-family:arial;font-size:12px;color:#444444;text-decoration:none;">Hidden Apps</p>
-    </div>
-  </a>
-  </center>
-  <center>
-  <a style="text-decoration:none;" href="http://itunes.apple.com/gb/app/movies-diary/id1331405996?mt=8" >
-  <div style="width:88%;padding-bottom:22px;padding-top:1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom:30px;background-color: white;border-radius:20px;"  id="item">
-      <h1 style="margin-left:15%;margin-top:20px;font-family:arial;font-size:15px;color:#444444;text-decoration:none;" href="" >
-        <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:70px;margin-right:10px; width:70px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/275ACAC8-2458-467F-9883-3A86425BB6A2.jpg?w=200&q=40&dpr=1">Movie Diary</h1>
-        <p style="margin-left:25%;margin-top:20px;font-family:arial;font-size:12px;color:#444444;text-decoration:none;">Hidden Apps</p>
-    </div>
-  </a>
-  </center>
-  <center>
-  <a style="text-decoration:none;" href="http://itunes.apple.com/us/app/display-screen-recorder/id733452098?mt=8" >
-  <div style="width:88%;padding-bottom:22px;padding-top:1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom:30px;background-color: white;border-radius:20px;"  id="item">
-      <h1 style="margin-left:15%;margin-top:20px;font-family:arial;font-size:15px;color:#444444;text-decoration:none;" href="" >
-        <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:70px;margin-right:10px; width:70px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/D865927E-1002-4558-9B6F-094C662D8E78.jpg?w=200&q=40&dpr=1">Display Recorder</h1>
-        <p style="margin-left:25%;margin-top:20px;font-family:arial;font-size:12px;color:#444444;text-decoration:none;">Hidden Apps</p>
-    </div>
-  </a>
-  </center>
-    <center>
-    <a style="text-decoration:none;" href="https://itunes.apple.com/us/app/everycord-record-broadcast/id1336328583?mt=8" >
-    <div style="width:88%;padding-bottom:22px;padding-top:1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom:30px;background-color: white;border-radius:20px;"  id="item">
-        <h1 style="margin-left:15%;margin-top:20px;font-family:arial;font-size:15px;color:#444444;text-decoration:none;" href="" >
-          <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:70px;margin-right:10px; width:70px;border-radius:20%;" align="left" src="http://caspia.000webhostapp.com/img/srGqe1fJRrSKIR3YqHTv_LYU1cfqMT2WJdmgCVbXl_2952676.175x175-75.jpg">EveryCord</h1>
-          <p style="margin-left:25%;margin-top:20px;font-family:arial;font-size:12px;color:#444444;text-decoration:none;">Hidden Apps</p>
-      </div>
-    </a>
-    </center>
-    <center>
-    <a style="text-decoration:none;" href="https://itunes.apple.com/us/app/omlet-arcade/id1152185878?mt=8" >
-    <div style="width:88%;padding-bottom:22px;padding-top:1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom:30px;background-color: white;border-radius:20px;"  id="item">
-        <h1 style="margin-left:15%;margin-top:20px;font-family:arial;font-size:15px;color:#444444;text-decoration:none;" href="" >
-          <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:70px;margin-right:10px; width:70px;border-radius:20%;" align="left" src="http://is3.mzstatic.com/image/thumb/Purple82/v4/b9/22/57/b92257f8-1887-7502-14e6-7853bc0e4381/source/1200x630bb.jpg">Omlet Arcade</h1>
-          <p style="margin-left:25%;margin-top:20px;font-family:arial;font-size:12px;color:#444444;text-decoration:none;">Hidden Apps</p>
-      </div>
-    </a>
-    </center>
-<br>
-<br>
-<br>
-<br>
+
+<h1  style="font-family:sfdb;font-size:25px;margin-left:17px;color:black;">Hidden Apps</h1>
+
+
+
+
+
+<center>
+  <div  style="text-align:left;width:88%;padding-bottom:10px;padding-top:1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin:0px;background-color: white;border-radius:20px;"  id="item">
+<a style="text-decoration:none;margin:0px;" href="http://itunes.apple.com/us/app/titan-browser-cloud-file-vpn/id1256264596?mt=8" >
+<h1 style="font-family:sfdb;font-size:20px;margin-left:17px;color:black;">Hidden Apps</h1>
+<h1 style="margin-left:5%;margin-top:20px;font-family:sfd;font-size:15px;color:#444444;text-decoration:none;" href="" >
+  <img class="boun" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/5759E63D-5F81-4EE7-8A66-9497E6383433.jpg?w=200&q=40&dpr=1">Titan</h1>
+  <p style="margin-left:15%;margin-top:4px;font-family:sfd;font-size:12px;color:grey;text-decoration:none;">Video Downloader</p>
+</a>
+<center><h1 style="border-bottom:solid;border-bottom-width:thin;border-bottom-color:grey;width:80%;display:block;margin-left:50px;"></h1></center>
+<a style="text-decoration:none;margin:0px;" href="http://itunes.apple.com/us/app/magic-phone-cleaner/id1176756975?mt=8" >
+    <h1 style="margin-left:5%;margin-top:20px;font-family:sfd;font-size:15px;color:#444444;text-decoration:none;" href="" >
+      <img class="boun" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/55E3714D-FBF8-42C5-9A12-BBD6B08E2B33.jpg?w=200&q=40&dpr=1">Magic Phone Cleaner</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:sfd;font-size:12px;color:grey;text-decoration:none;">Storage Cleaner</p>
+</a>
+<center><h1 style="border-bottom:solid;border-bottom-width:thin;border-bottom-color:grey;width:80%;display:block;margin-left:50px;"></h1></center>
+<a style="text-decoration:none;margin:0px;" href="http://itunes.apple.com/gb/app/movies-diary/id1331405996?mt=8" >
+    <h1 style="margin-left:5%;margin-top:20px;font-family:sfd;font-size:15px;color:#444444;text-decoration:none;" href="" >
+      <img class="boun" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/275ACAC8-2458-467F-9883-3A86425BB6A2.jpg?w=200&q=40&dpr=1">Movies Diary</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:sfd;font-size:12px;color:grey;text-decoration:none;">Free Movies</p>
+</a>
+<center><h1 style="border-bottom:solid;border-bottom-width:thin;border-bottom-color:grey;width:80%;display:block;margin-left:50px;"></h1></center>
+<a style="text-decoration:none;margin:0px;" href="http://itunes.apple.com/us/app/display-screen-recorder/id733452098?mt=8" >
+    <h1 style="margin-left:5%;margin-top:20px;font-family:sfd;font-size:15px;color:#444444;text-decoration:none;" href="" >
+      <img class="boun" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/D865927E-1002-4558-9B6F-094C662D8E78.jpg?w=200&q=40&dpr=1">Display Recorder</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:sfd;font-size:12px;color:grey;text-decoration:none;">Screen Rcorder</p>
+</a>
+<center><h1 style="border-bottom:solid;border-bottom-width:thin;border-bottom-color:grey;width:80%;display:block;margin-left:50px;"></h1></center>
+<a style="text-decoration:none;margin:0px;" href="https://itunes.apple.com/us/app/everycord-record-broadcast/id1336328583?mt=8" >
+    <h1 style="margin-left:5%;margin-top:20px;font-family:sfd;font-size:15px;color:#444444;text-decoration:none;" href="" >
+      <img class="boun" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://caspia.000webhostapp.com/img/srGqe1fJRrSKIR3YqHTv_LYU1cfqMT2WJdmgCVbXl_2952676.175x175-75.jpg">Everycord</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:sfd;font-size:12px;color:grey;text-decoration:none;">Screen Rcorder</p>
+</a>
+<center><h1 style="border-bottom:solid;border-bottom-width:thin;border-bottom-color:grey;width:80%;display:block;margin-left:50px;"></h1></center>
+<a style="text-decoration:none;margin:0px;" href="https://itunes.apple.com/us/app/omlet-arcade/id1152185878?mt=8" >
+    <h1 style="margin-left:5%;margin-top:20px;font-family:sfd;font-size:15px;color:#444444;text-decoration:none;" href="" >
+      <img class="boun" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is3.mzstatic.com/image/thumb/Purple82/v4/b9/22/57/b92257f8-1887-7502-14e6-7853bc0e4381/source/1200x630bb.jpg">Omlet Arcade</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:sfd;font-size:12px;color:grey;text-decoration:none;">Screen Rcorder</p>
+</a>
 </div>
+</div>
+
+
+</center>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 </body>
+</html>
+
+<script type="text/javascript">
+
+window.onload=function(){
+   now=new Date().toDateString();
+   document.getElementById('date').value=now;
+}
+img(
+    src='https://s29.postimg.org/ixin74287/tigere.jpg'
+    alt='tiger'
+  )
+  span bounce-in
+  span css
+  span animation
+
+</script>
 <script type="text/javascript">
 var iWebkit;if(!iWebkit){iWebkit=window.onload=function(){function fullscreen(){var a=document.getElementsByTagName("a");for(var i=0;i<a.length;i++){if(a[i].className.match("noeffect")){}else{a[i].onclick=function(){window.location=this.getAttribute("href");return false}}}}function hideURLbar(){window.scrollTo(0,0.9)}iWebkit.init=function(){fullscreen();hideURLbar()};iWebkit.init()}}
 </script>
-</html>
