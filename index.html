@@ -47,7 +47,7 @@ li{
 
 
 
-@font-face { font-family: sfd; src: url('font/SanFranciscoDisplay-Bold.otf'); }
+@font-face { font-family: sfd; src: url('font/SanFranciscoDisplay-light.otf'); }
 @font-face { font-family: sfdb; font-weight: bold; src: url('font/SanFranciscoDisplay-Bold.otf');}
 span, .boun{
   opacity: 0;
@@ -94,8 +94,22 @@ span:nth-child(4){animation-delay: 3.15s;}
   </ul>
   </div>
 
-  <h5>
-<font style="font-family:sfd;margin-left:17px;" color="777777" class>Tuesday, June 20</font>
+  <h5 style="font-family:sfd;margin-left:17px;">
+    <script>
+
+    					                                                 var mydate=new Date()
+    					                                                 var year=mydate.getYear()
+    					                                                 var day=mydate.getDay()
+    					                                                 var month=mydate.getMonth()
+    					                                                 var daym=mydate.getDate()
+    					                                                 if (daym<10)
+    					                                                   daym="0"+daym
+    					                                                 var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+    					                                                 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+    					                                                 document.write("<font color='77777'>"+dayarray[day]+", "+montharray[month]+" "+daym+"<\/font>")
+
+    </script>
+<font style="font-family:sfd;margin-left:17px;" color="777777" class></font>
   </h5>
 
 <h1  style="font-family:sfdb;font-size:25px;margin-left:17px;color:black;">Today</h1>
@@ -150,20 +164,7 @@ span:nth-child(4){animation-delay: 3.15s;}
 </body>
 </html>
 
-<script>
 
-					                                                 var mydate=new Date()
-					                                                 var year=mydate.getYear()
-					                                                 var day=mydate.getDay()
-					                                                 var month=mydate.getMonth()
-					                                                 var daym=mydate.getDate()
-					                                                 if (daym<10)
-					                                                   daym="0"+daym
-					                                                 var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
-					                                                 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-					                                                 document.write("<font color='77777'>"+dayarray[day]+", "+montharray[month]+" "+daym+"<\/font>")
-
-</script>
 <script type="text/javascript">
 img(
     src='https://s29.postimg.org/ixin74287/tigere.jpg'
