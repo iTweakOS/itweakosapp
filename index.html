@@ -50,11 +50,10 @@ li{
 @font-face { font-family: sfd; src: url('font/SanFranciscoDisplay-Bold.otf'); }
 @font-face { font-family: sfdb; font-weight: bold; src: url('font/SanFranciscoDisplay-Bold.otf');}
 span, .boun{
-  opacity: 0;
   animation-name: bounceIn;
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-fill-mode: forwards;
+
 }
 
 .boun {animation-delay: 2s;}
@@ -85,7 +84,7 @@ span:nth-child(4){animation-delay: 3.15s;}
 </head>
 <body>
 
-  <div class="nav">
+  <div style="animation-fill-mode:forwards;" class="nav">
   <ul>
   <li><a href="index.html"><img src="img/today.png"></img></a></li>
   <li><a href="games.html"><img src="img/launch.png"></img></a></li>
@@ -148,7 +147,7 @@ span:nth-child(4){animation-delay: 3.15s;}
 <center><h1 style="border-bottom:solid;border-bottom-width:thin;border-bottom-color:grey;width:80%;display:block;margin-left:50px;"></h1></center>
 <a style="text-decoration:none;margin:0px;" href="itms-services://?action=download-manifest&amp;url=https://itweakapi.bitballoon.com/hacked/pubg.plist" >
     <h1 style="margin-left:5%;margin-top:20px;font-family:sfd;font-size:15px;color:#444444;text-decoration:none;" href="" >
-      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://i0.wp.com/arc1220-blog.com/wp-content/uploads/2018/05/pubgmobile_logo.jpg?resize=150%2C150&ssl=1">PUBG Mobile Hack</h1>
+      <img class="boun"  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://i0.wp.com/arc1220-blog.com/wp-content/uploads/2018/05/pubgmobile_logo.jpg?resize=150%2C150&ssl=1">PUBG Mobile Hack</h1>
       <p style="margin-left:15%;margin-top:4px;font-family:sfd;font-size:12px;color:grey;text-decoration:none;">Hacked</p>
 </a>
 </div>
