@@ -33,13 +33,139 @@ html, body {
     overflow-x: hidden;
 }
 
+@keyframes delay {
+  0%, 40%, 100% {
+    transform: scaleY(0.05);
+    -webkit-transform: scaleY(0.05);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+body{
+  -webkit-font-smoothing: antialiased;
+
+  &:before,
+  &:after{
+    content: '';
+    height: 50vh;
+    width:100%;
+    position:fixed;
+    left:0;
+    background: #1c2020;
+    z-index:1;
+
+  }
+
+  &:before{
+    top: 0;
+    transform: translateY(-100%);
+  }
+  &:after{
+    bottom: 0;
+    transform: translateY(100%);
+  }
+
+
+
+.btn{
+  display: inline-block;
+  padding: 1.4em 1.6em;
+  margin-bottom: 2em;
+  border-radius: 50em;
+  background-color: lighten(#1c2020, 10%);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover{
+    background-color: lighten(#1c2020, 15%);
+  }
+}
+.loader {
+  margin: 0 auto;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 500;
+  opacity: 0;
+
+  > div {
+    height: 100%;
+    width: 8px;
+    display: inline-block;
+    float: left;
+    margin-left: 2px;
+    animation: delay 0.8s infinite ease-in-out;
+  }
+
+  .bar1{
+    background-color: #754fa0 ;
+  }
+  .bar2{
+    background-color: #09b7bf;
+    animation-delay: -0.7s;
+  }
+  .bar3{
+    background-color: #90d36b;
+    animation-delay: -0.6s;
+  }
+  .bar4{
+    background-color: #f2d40d;
+    animation-delay: -0.5s;
+  }
+  .bar5{
+    background-color: #fcb12b;
+    animation-delay: -0.4s;
+  }
+  .bar6{
+    background-color: #ed1b72;
+    animation-delay: -0.3s;
+  }
+}
+main {
+  height: 100vh;
+  /* padding: 10px; */
+  text-align: center;
+
+  .-content{
+    position: relative;
+    height: 100vh;
+
+    > div {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+
+    &.-index{
+        background-color: #f6f6f6;
+        display: table;
+        width: 100%;
+
+      > div {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
 
 
 </style>
 </head>
 <body>
 
-
+  <main>
+    <div class="-content -index">
+      <div>
 
 <center><div style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);width:100%;padding:6px;">
   <h1 style="font-family:arial;font-size:20px;margin:0px;"><img style="width:20px;border-radius:5px;margin-right:2px;margin-top:6px;" src="https://onuniverse-assets.imgix.net/755E8191-9A86-43E2-A71F-2E3CAB34FFF6.jpg?q=75&dpr=1.25"></img>iTweakOS</h1>
@@ -133,11 +259,24 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
 
 <center>
 <ul style="background-color:white;width:100%;opacity:0.9;padding:5px;position:fixed;bottom:0px;margin:0px;">
-<li style="display:inline-block;float:left;width:32.2%;"><a href="index.html"><img style="width:25px;" src="https://png.icons8.com/ios-glyphs/1600/today-apps.png"></img></a></li>
-<li style="display:inline-block;float:left;width:32.2%;"><a href="sections.html"><img style="width:25px;" src="https://image.flaticon.com/icons/png/512/174/174840.png"></img></a></li>
-<li style="display:inline-block;float:left;width:32.2%;"><a href="info.html"><img style="width:25px;" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png"></img></a></li>
+<li style="display:inline-block;float:left;width:32.2%;"><a class="btn js-trigger-transition" href="index.html"><img style="width:25px;" src="https://png.icons8.com/ios-glyphs/1600/today-apps.png"></img></a></li>
+<li style="display:inline-block;float:left;width:32.2%;"><a class="btn js-trigger-transition" href="sections.html"><img style="width:25px;" src="https://image.flaticon.com/icons/png/512/174/174840.png"></img></a></li>
+<li style="display:inline-block;float:left;width:32.2%;"><a class="btn js-trigger-transition" href="info.html"><img style="width:25px;" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png"></img></a></li>
 </ul>
 </center>
+
+</div>
+</div>
+</main>
+
+<div class="loader">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <div class="bar4"></div>
+  <div class="bar5"></div>
+  <div class="bar6"></div>
+</div>
 
 </body>
 </html>
