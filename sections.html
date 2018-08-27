@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="animated lightSpeedIn">
 <link rel="icon" href="https://onuniverse-assets.imgix.net/755E8191-9A86-43E2-A71F-2E3CAB34FFF6.jpg?q=75&dpr=1.25" type="image/gif" sizes="16x16">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
 <title>iTweakOS</title>
 <meta name="propeller" content="b4ac2fcda6d057910951d51d06d79fb5">
 <script src="//go.mobtrks.com/notice.php?p=1929062&interstitial=1"></script>
+<link rel="stylesheet" href="animate.css">
 <head>
 <style>
 
@@ -32,130 +33,6 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-@keyframes delay {
-  0%, 40%, 100% {
-    transform: scaleY(0.05);
-    -webkit-transform: scaleY(0.05);
-  }  20% {
-    transform: scaleY(1.0);
-    -webkit-transform: scaleY(1.0);
-  }
-}
-body{
-  -webkit-font-smoothing: antialiased;
-
-  &:before,
-  &:after{
-    content: '';
-    height: 50vh;
-    width:100%;
-    position:fixed;
-    left:0;
-    background: #1c2020;
-    z-index:1;
-
-  }
-
-  &:before{
-    top: 0;
-    transform: translateY(-100%);
-  }
-  &:after{
-    bottom: 0;
-    transform: translateY(100%);
-  }
-
-
-
-.btn{
-  display: inline-block;
-  padding: 1.4em 1.6em;
-  margin-bottom: 2em;
-  border-radius: 50em;
-  background-color: lighten(#1c2020, 10%);
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  &:hover{
-    background-color: lighten(#1c2020, 15%);
-  }
-}
-.loader {
-  margin: 0 auto;
-  width: 60px;
-  height: 50px;
-  text-align: center;
-  font-size: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  z-index: 500;
-  opacity: 0;
-
-  > div {
-    height: 100%;
-    width: 8px;
-    display: inline-block;
-    float: left;
-    margin-left: 2px;
-    animation: delay 0.8s infinite ease-in-out;
-  }
-
-  .bar1{
-    background-color: #754fa0 ;
-  }
-  .bar2{
-    background-color: #09b7bf;
-    animation-delay: -0.7s;
-  }
-  .bar3{
-    background-color: #90d36b;
-    animation-delay: -0.6s;
-  }
-  .bar4{
-    background-color: #f2d40d;
-    animation-delay: -0.5s;
-  }
-  .bar5{
-    background-color: #fcb12b;
-    animation-delay: -0.4s;
-  }
-  .bar6{
-    background-color: #ed1b72;
-    animation-delay: -0.3s;
-  }
-}
-main {
-  height: 100vh;
-  /* padding: 10px; */
-  text-align: center;
-
-  .-content{
-    position: relative;
-    height: 100vh;
-
-    > div {
-      height: 100%;
-      overflow: hidden;
-      overflow-y: auto;
-    }
-
-    &.-index{
-        background-color: #f6f6f6;
-        display: table;
-        width: 100%;
-
-      > div {
-        display: table-cell;
-        vertical-align: middle;
-      }
-    }
 
 
 
@@ -259,9 +136,9 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
 
 <center>
 <ul style="background-color:white;width:100%;opacity:0.9;padding:5px;position:fixed;bottom:0px;margin:0px;">
-<li style="display:inline-block;float:left;width:32.2%;"><a class="btn js-trigger-transition" href="index.html"><img style="width:25px;" src="https://png.icons8.com/ios-glyphs/1600/today-apps.png"></img></a></li>
-<li style="display:inline-block;float:left;width:32.2%;"><a class="btn js-trigger-transition" href="sections.html"><img style="width:25px;" src="https://image.flaticon.com/icons/png/512/174/174840.png"></img></a></li>
-<li style="display:inline-block;float:left;width:32.2%;"><a class="btn js-trigger-transition" href="info.html"><img style="width:25px;" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png"></img></a></li>
+<li style="display:inline-block;float:left;width:32.2%;"><a  href="index.html"><img style="width:25px;" src="https://png.icons8.com/ios-glyphs/1600/today-apps.png"></img></a></li>
+<li style="display:inline-block;float:left;width:32.2%;"><a  href="sections.html"><img style="width:25px;" src="https://image.flaticon.com/icons/png/512/174/174840.png"></img></a></li>
+<li style="display:inline-block;float:left;width:32.2%;"><a  href="info.html"><img style="width:25px;" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png"></img></a></li>
 </ul>
 </center>
 
@@ -269,14 +146,6 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
 </div>
 </main>
 
-<div class="loader">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-  <div class="bar4"></div>
-  <div class="bar5"></div>
-  <div class="bar6"></div>
-</div>
 
 </body>
 </html>
@@ -284,22 +153,3 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
 <script type="text/javascript">
 var iWebkit;if(!iWebkit){iWebkit=window.onload=function(){function fullscreen(){var a=document.getElementsByTagName("a");for(var i=0;i<a.length;i++){if(a[i].className.match("noeffect")){}else{a[i].onclick=function(){window.location=this.getAttribute("href");return false}}}}function hideURLbar(){window.scrollTo(0,0.9)}iWebkit.init=function(){fullscreen();hideURLbar()};iWebkit.init()}}
 </script>\
-<script>
-setTimeout(transition, 1000);
-
-$('.js-trigger-transition').on('click', function(e) {
-  e.preventDefault();
-  transition();
-});
-
-function transition() {
-  var tl = new TimelineMax();
-
-  tl.to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '50%' }, ease: Power2.easeOut}, 'close')
-  .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '50%' }, ease: Power2.easeOut}, 'close')
-  .to($('.loader'), 0.2, {opacity: 1})
-  .to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '0%' }, ease: Power2.easeOut}, '+=1.5', 'open')
-  .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '0%' }, ease: Power2.easeOut}, '-=0.2', 'open')
-  .to($('.loader'), 0.2, {opacity: 0}, '-=0.2');
-}
-</script>
